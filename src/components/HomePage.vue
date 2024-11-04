@@ -181,16 +181,26 @@ import { ref, computed } from "vue";
 
 const dialog = ref(false);
 // Images for the carousel
+// const images = [
+//   "/src/assets/desktop-image-hero-1.jpg",
+//   "/src/assets/desktop-image-hero-2.jpg",
+//   "/src/assets/desktop-image-hero-3.jpg",
+// ];
 const images = [
-  "/src/assets/desktop-image-hero-1.jpg",
-  "/src/assets/desktop-image-hero-2.jpg",
-  "/src/assets/desktop-image-hero-3.jpg",
+  new URL("/src/assets/desktop-image-hero-1.jpg", import.meta.url).href,
+  new URL("/src/assets/desktop-image-hero-2.jpg", import.meta.url).href,
+  new URL("/src/assets/desktop-image-hero-3.jpg", import.meta.url).href,
 ];
 
+// const images2 = [
+//   "/src/assets/mobile-image-hero-1.jpg",
+//   "/src/assets/mobile-image-hero-2.jpg",
+//   "/src/assets/mobile-image-hero-3.jpg",
+// ];
 const images2 = [
-  "/src/assets/mobile-image-hero-1.jpg",
-  "/src/assets/mobile-image-hero-2.jpg",
-  "/src/assets/mobile-image-hero-3.jpg",
+  new URL("/src/assets/mobile-image-hero-1.jpg", import.meta.url).href,
+  new URL("/src/assets/mobile-image-hero-2.jpg", import.meta.url).href,
+  new URL("/src/assets/mobile-image-hero-3.jpg", import.meta.url).href,
 ];
 
 // Headings and paragraphs data
